@@ -1,0 +1,104 @@
+<p-table [value]="[[]]">
+  <ng-template pTemplate="header">
+    <tr>
+      <th>Pipe</th>
+      <th>Variable</th>
+      <th>Equivalente</th>
+      <th>Forma utilizarlo</th>
+      <th>Pipe Aplicado</th>
+    </tr>
+  </ng-template>
+  <ng-template pTemplate="body">
+    <tr>
+      <td>Date</td>
+      <td>{{ dateNow }}</td>
+      <td>M/d/yy</td>
+      <td ngNonBindable>{{ miVariable | date }}</td>
+      <td>{{ dateNow | date }}</td>
+    </tr>
+    <tr>
+      <td>Short</td>
+      <td>{{ dateNow }}</td>
+      <td>M/d/yy, h:mm a</td>
+      <td ngNonBindable>{{ miVariable | date: 'short' }}</td>
+      <td>{{ dateNow | date: 'short' }}</td>
+    </tr>
+    <tr>
+      <td>Medium</td>
+      <td>{{ dateNow }}</td>
+      <td>MMM d, y, h:mm:ss a</td>
+      <td ngNonBindable>{{ miVariable | date: 'medium' }}</td>
+      <td>{{ dateNow | date: 'medium' }}</td>
+    </tr>
+    <tr>
+      <td>Long</td>
+      <td>{{ dateNow }}</td>
+      <td>MMMM d, y, h:mm:ss a z</td>
+      <td ngNonBindable>{{ miVariable | date: 'long' }}</td>
+      <td>{{ dateNow | date: 'long' }}</td>
+    </tr>
+    <tr>
+      <td>Full</td>
+      <td>{{ dateNow }}</td>
+      <td>EEEE, MMMM d, y, h:mm:ss a zzzz</td>
+      <td ngNonBindable>{{ miVariable | date: 'full' }}</td>
+      <td>{{ dateNow | date: 'full' }}</td>
+    </tr>
+    <tr>
+      <td>ShortDate</td>
+      <td>{{ dateNow }}</td>
+      <td>M/d/yy</td>
+      <td ngNonBindable>{{ miVariable | date: 'shortDate' }}</td>
+      <td>{{ dateNow | date: 'shortDate' }}</td>
+    </tr>
+    <tr>
+      <td>MediumDate</td>
+      <td>{{ dateNow }}</td>
+      <td>MMM d, y</td>
+      <td ngNonBindable>{{ miVariable | date: 'mediumDate' }}</td>
+      <td>{{ dateNow | date: 'mediumDate' }}</td>
+    </tr>
+    <tr>
+      <td>LongDate</td>
+      <td>{{ dateNow }}</td>
+      <td>MMMM d, y</td>
+      <td ngNonBindable>{{ miVariable | date: 'longDate' }}</td>
+      <td>{{ dateNow | date: 'longDate' }}</td>
+    </tr>
+    <tr>
+      <td>FullDate</td>
+      <td>{{ dateNow }}</td>
+      <td>EEEE, MMMM d, y</td>
+      <td ngNonBindable>{{ miVariable | date: 'fullDate' }}</td>
+      <td>{{ dateNow | date: 'fullDate' }}</td>
+    </tr>
+    <tr>
+      <td>ShortTime</td>
+      <td>{{ dateNow }}</td>
+      <td>h:mm a</td>
+      <td ngNonBindable>{{ miVariable | date: 'shortTime' }}</td>
+      <td>{{ dateNow | date: 'shortTime' }}</td>
+    </tr>
+    <tr>
+      <td>MediumTime</td>
+      <td>{{ dateNow }}</td>
+      <td>h:mm:ss a</td>
+      <td ngNonBindable>{{ miVariable | date: 'mediumTime' }}</td>
+      <td>{{ dateNow | date: 'mediumTime' }}</td>
+    </tr>
+    <tr>
+      <td>LongTime</td>
+      <td>{{ dateNow }}</td>
+      <td>h:mm:ss a z</td>
+      <td ngNonBindable>{{ miVariable | date: 'longTime' }}</td>
+      <td>{{ dateNow | date: 'longTime' }}</td>
+    </tr>
+    <tr>
+      <td>FullTime</td>
+      <td>{{ dateNow }}</td>
+      <td>h:mm:ss a zzzz</td>
+      <td ngNonBindable>{{ miVariable | date: 'fullTime' }}</td>
+      <td>{{ dateNow | date: 'fullTime' }}</td>
+    </tr>
+  </ng-template>
+</p-table>

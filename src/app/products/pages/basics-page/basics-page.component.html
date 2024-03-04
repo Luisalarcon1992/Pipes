@@ -1,0 +1,34 @@
+<p-panel header="Pipes Básicos" class="mt-2">
+  <p>Todos los pipes hace un cambio visual únicamente, a continuación vemos algunos de los pipes más utilizados.</p>
+</p-panel>
+
+<section class="grid mt-2 justify-content-center align-items-center">
+  <article class="col-12 md:col-4 " style="text-wrap: wrap;">
+    <p-card header="Uppercase" subheader="Como utilizar el pipe Uppercase">
+      Para utilizar este pipe se tiene que utilizar la variable: <strong ngNonBindable><br>{{ miVariable | uppercase
+        }}</strong> y esto mostrará el texto
+      en mayúscula.
+      <p>Variable: {{ lowerCase }}: {{ lowerCase | uppercase }}</p>
+    </p-card>
+  </article>
+
+  <article class="col-12 md:col-4 " style="text-wrap: wrap;">
+    <p-card header="LowerCase" subheader="Como utilizar el pipe LowerCase">
+      Para utilizar este pipe se tiene que utilizar la variable: <strong ngNonBindable><br>{{ miVariable | lowercase
+        }}</strong> y esto mostrará el texto
+      en minúscula.
+      <p>Variable: {{ upperCase }}: {{ upperCase | lowercase }}</p>
+    </p-card>
+  </article>
+
+  <article class="col-12 md:col-4  wrap">
+    <p-card header="Titlecase" subheader="Como utilizar el pipe Titlecase" class="wrap">
+      Para utilizar este pipe se tiene que utilizar la variable: <strong ngNonBindable><br>{{ miVariable | titlecase
+        }}</strong> y esto mostrará el texto
+      en capitalizado, es decir, la primer letra de cada palabra estará en mayúscula.
+      <p>Variable: {{ titleCase }}: {{ titleCase | titlecase }}</p>
+    </p-card>
+  </article>
+</section>
+
+<products-date-pipe></products-date-pipe>
